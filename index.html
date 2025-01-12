@@ -1,47 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoyaltyMC</title>
+    <title>LoyaltyMC - Home</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo-container">
-                <img src="logo.png" alt="LoyaltyMC Logo" class="logo">
-            </div>
-            <ul class="nav-links">
+        <div class="logo">
+            <img src="logo.png" alt="LoyaltyMC">
+        </div>
+        <nav>
+            <ul>
                 <li><a href="#">Home</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Discord</a></li>
                 <li><a href="#">Staff</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Stato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="hero">
-            <h1>Benvenuto su LoyaltyMC!</h1>
-            <p>IP Server: <span class="highlight">play.loyaltymc.it</span></p>
-            <div class="buttons">
-                <a href="#" class="btn">Accedi</a>
-                <a href="#" class="btn">Registrazione</a>
-            </div>
+            <h1>Benvenuto su LoyaltyMC</h1>
+            <p>Unisciti al miglior server Minecraft a tema acquatico!</p>
+            <button onclick="copyIP()">Copia IP: play.loyaltymc.it</button>
         </section>
 
-        <section class="discord">
-            <h2>Unisciti al nostro Discord</h2>
-            <p>Connettiti con la nostra fantastica community!</p>
-            <a href="#" class="btn discord-btn">Unisciti al Discord</a>
+        <section class="about">
+            <h2>Chi Siamo</h2>
+            <p>LoyaltyMC è un server nato per offrire un'esperienza unica e coinvolgente ai giocatori di Minecraft.</p>
         </section>
     </main>
 
     <footer>
-        <p>© 2025 LoyaltyMC. Tutti i diritti riservati.</p>
+        <p>© 2025 LoyaltyMC - Tutti i diritti riservati.</p>
     </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
