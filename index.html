@@ -1,54 +1,47 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il Mio Server</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <title>LoyaltyMC</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="logo.png" alt="LoyaltyMC Logo" class="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Staff</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Stato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Navbar -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#staff">Staff</a></li>
-            <li><a href="#regole">Shop</a></li>
-            <li><a href="#stato">Stato</a></li>
-        </ul>
-    </nav>
+    <main>
+        <section class="hero">
+            <h1>Benvenuto su LoyaltyMC!</h1>
+            <p>IP Server: <span class="highlight">play.loyaltymc.it</span></p>
+            <div class="buttons">
+                <a href="#" class="btn">Accedi</a>
+                <a href="#" class="btn">Registrazione</a>
+            </div>
+        </section>
 
-    <!-- Contenuto Principale -->
-    <section class="main-content">
-        <!-- Colonna Sinistra: IP Server Minecraft -->
-        <div class="left-box">
-            <h2>IP Server</h2>
-            <p>play.tuoserver.it</p>
-        </div>
+        <section class="discord">
+            <h2>Unisciti al nostro Discord</h2>
+            <p>Connettiti con la nostra fantastica community!</p>
+            <a href="#" class="btn discord-btn">Unisciti al Discord</a>
+        </section>
+    </main>
 
-        <!-- Logo Centrale -->
-        <div class="logo-box">
-            <img src="logo.png" alt="Logo Server" class="logo">
-        </div>
+    <footer>
+        <p>© 2025 LoyaltyMC. Tutti i diritti riservati.</p>
+    </footer>
 
-        <!-- Colonna Destra: Discord -->
-        <div class="right-box">
-            <h2>Discord</h2>
-            <a href="https://discord.gg/tuolink" target="_blank">
-                <img src="discord.png" alt="Discord" class="discord-icon">
-                <p>Clicca per entrare!</p>
-            </a>
-        </div>
-    </section>
-
-    <!-- Stato Server e Accessi -->
-    <section class="server-status">
-        <h3>Server Status: <span id="server-status">Offline</span></h3>
-        <button onclick="window.location.href='login.html'">Accesso</button>
-        <button onclick="window.location.href='register.html'">Registrazione</button>
-        <button onclick="window.location.href='store.html'">Store</button>
-    </section>
-
+    <script src="scripts.js"></script>
 </body>
 </html>
