@@ -1,126 +1,99 @@
-/* Stile Generale */
-* {
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background: #000;
+    background: linear-gradient(120deg, #2b1055, #7597de);
     color: #fff;
-    overflow-x: hidden;
 }
 
 /* Navbar */
-nav {
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    text-align: center;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
-nav ul {
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+.nav-links {
     list-style: none;
-    display: inline-flex;
+    display: flex;
+    gap: 20px;
 }
 
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: white;
+.nav-links a {
+    color: #fff;
     text-decoration: none;
-    font-size: 18px;
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #00bfff;
+.nav-links a:hover {
+    color: #ffd700;
 }
 
-/* Layout Principale */
-.main-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-    padding-top: 60px;
-}
-
-.left-box, .right-box {
-    width: 25%;
+/* Hero Section */
+.hero {
     text-align: center;
+    padding: 100px 20px;
+    background: rgba(0, 0, 0, 0.5);
 }
 
-.logo-box .logo {
-    width: 250px;
-    animation: float 3s ease-in-out infinite;
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
-/* Animazione Logo */
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
+.hero .highlight {
+    color: #ffd700;
+    font-weight: bold;
 }
 
-/* Icona Discord */
-.discord-icon {
-    width: 100px;
-    transition: transform 0.3s;
+.buttons .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #ff4500;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s, background 0.3s;
 }
 
-.discord-icon:hover {
+.buttons .btn:hover {
+    background: #ffa500;
     transform: scale(1.1);
 }
 
-/* Stato Server */
-.server-status {
+/* Discord Section */
+.discord {
     text-align: center;
-    padding: 20px;
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.7);
 }
 
-.server-status button {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #00bfff;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    transition: background 0.3s;
+.discord-btn {
+    background: #7289da;
 }
 
-.server-status button:hover {
-    background-color: #0080ff;
+.discord-btn:hover {
+    background: #99aab5;
 }
 
-/* Animazione Neve */
-@keyframes snow {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 1000px 1000px;
-    }
-}
-
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('snowflake.png');
-    opacity: 0.3;
-    animation: snow 10s linear infinite;
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
 }
