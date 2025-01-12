@@ -3,31 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Server Minecraft</title>
+    <title>Il Mio Server</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Benvenuti in AbyssalMC🦭​🌊​</h1>
-    </header>
 
-    <section id="server-info">
-        <h2>Informazioni sul Server</h2>
-        <p>Nome: Server Esempio</p>
-        <p>IP: 123.456.789.101</p>
-        <p>Versione: 1.18</p>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#staff">Staff</a></li>
+            <li><a href="#regole">Regole</a></li>
+            <li><a href="#stato">Stato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenuto Principale -->
+    <section class="main-content">
+        <!-- Colonna Sinistra: IP Server Minecraft -->
+        <div class="left-box">
+            <h2>IP Server</h2>
+            <p>play.tuoserver.it</p>
+            <span class="play-icon">▶️</span>
+        </div>
+
+        <!-- Logo Centrale -->
+        <div class="logo-box">
+            <img src="logo.png" alt="Logo Server" class="logo">
+        </div>
+
+        <!-- Colonna Destra: Discord -->
+        <div class="right-box">
+            <h2>Discord</h2>
+            <a href="https://discord.gg/tuolink" target="_blank">
+                <img src="discord.png" alt="Discord" class="discord-icon">
+                <p>Clicca per entrare!</p>
+            </a>
+        </div>
     </section>
 
-    <section id="statistiche">
-        <h2>Statistiche</h2>
-        <p>Giocatori Online: 10</p>
-        <p>Ore di gioco totali: 200</p>
+    <!-- Stato Server e Accessi -->
+    <section class="server-status">
+        <h3>Server Status: <span id="server-status">Offline</span></h3>
+        <button onclick="window.location.href='login.html'">Accesso</button>
+        <button onclick="window.location.href='register.html'">Registrazione</button>
+        <button onclick="window.location.href='store.html'">Store</button>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Server Minecraft</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
