@@ -1,99 +1,63 @@
-/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(120deg, #2b1055, #7597de);
-    color: #fff;
+    background: linear-gradient(to bottom, #004d7a, #00a8cc);
+    color: white;
+    text-align: center;
 }
 
-/* Navbar */
-.navbar {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 50, 0.8);
+    padding: 20px;
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
+.logo img {
+    width: 150px;
 }
 
-.logo {
-    width: 120px;
-    height: auto;
-}
-
-.nav-links {
+nav ul {
     list-style: none;
-    display: flex;
-    gap: 20px;
+    padding: 0;
 }
 
-.nav-links a {
-    color: #fff;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
-    transition: color 0.3s;
+    font-size: 18px;
 }
 
-.nav-links a:hover {
-    color: #ffd700;
-}
-
-/* Hero Section */
 .hero {
-    text-align: center;
     padding: 100px 20px;
-    background: rgba(0, 0, 0, 0.5);
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+.hero button {
+    background: #00a8cc;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.hero .highlight {
-    color: #ffd700;
-    font-weight: bold;
+.hero button:hover {
+    background: #0085a1;
 }
 
-.buttons .btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background: #ff4500;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: transform 0.3s, background 0.3s;
-}
-
-.buttons .btn:hover {
-    background: #ffa500;
-    transform: scale(1.1);
-}
-
-/* Discord Section */
-.discord {
-    text-align: center;
-    padding: 50px 20px;
-    background: rgba(0, 0, 0, 0.7);
-}
-
-.discord-btn {
-    background: #7289da;
-}
-
-.discord-btn:hover {
-    background: #99aab5;
-}
-
-/* Footer */
 footer {
-    text-align: center;
+    background: rgba(0, 0, 50, 0.8);
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 20px;
 }
