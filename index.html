@@ -3,41 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoyaltyMC - Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>Loyalty MC</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Barra di navigazione -->
     <header>
-        <div class="logo">
-            <img src="logo.png" alt="LoyaltyMC">
-        </div>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Forum</a></li>
-                <li><a href="#">Store</a></li>
-                <li><a href="#">Discord</a></li>
-                <li><a href="#">Staff</a></li>
-            </ul>
+            <a href="#">🔍 Cerca</a>
+            <a href="#">Accedi</a>
+            <a href="#">Registrati</a>
         </nav>
     </header>
 
+    <!-- Sezione principale con loghi -->
     <main>
-        <section class="hero">
-            <h1>Benvenuto su LoyaltyMC</h1>
-            <p>Unisciti al miglior server Minecraft a tema acquatico!</p>
-            <button onclick="copyIP()">Copia IP: play.loyaltymc.it</button>
-        </section>
+        <div class="top-section">
+            
+            <!-- Giocatori Online con Icona Creeper -->
+            <div class="players">
+                <img src="creeper_icon.png" id="creeperIcon" alt="Creeper">
+                <button id="copyIPButton">726 Giocatori Online</button>
+                <p>IP: <span id="serverIP">play.loyaltymc.it</span></p>
+            </div>
 
-        <section class="about">
-            <h2>Chi Siamo</h2>
-            <p>LoyaltyMC è un server nato per offrire un'esperienza unica e coinvolgente ai giocatori di Minecraft.</p>
-        </section>
+            <!-- Logo Centrale Animato -->
+            <div class="logo">
+                <img src="loyalty_logo.png" id="loyaltyLogo" alt="Loyalty MC">
+            </div>
+
+            <!-- Discord Online -->
+            <div class="discord">
+                <img src="discord_icon.png" id="discordIcon" alt="Discord">
+                <button id="discordButton">9333 Utenti Online</button>
+                <p>Entra nel nostro Discord</p>
+            </div>
+
+        </div>
+
+        <!-- Menu di navigazione -->
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">Forum</a>
+            <a href="#">Store</a>
+            <a href="#">Membri</a>
+            <a href="#">Staff</a>
+        </nav>
     </main>
 
-    <footer>
-        <p>© 2025 LoyaltyMC - Tutti i diritti riservati.</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
