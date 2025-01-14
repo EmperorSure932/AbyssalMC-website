@@ -44,18 +44,31 @@ nav ul li a.active {
 
 .top-bar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 20px;
+    margin-top: 20px;
 }
 
 .left, .right {
+    margin: 0 30px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f2b705;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
     cursor: pointer;
-    font-size: 1.2em;
+}
+
+button:hover {
+    background-color: #ffcc00;
 }
 
 .center img.floating-logo {
-    width: 150px;
+    width: 180px;
     animation: float 3s ease-in-out infinite;
 }
 
@@ -88,7 +101,7 @@ nav ul li a.active {
     width: 100%;
     height: 100%;
     pointer-events: none;
-    background: url('https://i.imgur.com/5Bgv4IV.png') repeat;
+    background: url('snow.png') repeat;
     animation: snow 20s linear infinite;
     opacity: 0.5;
 }
