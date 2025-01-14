@@ -1,112 +1,98 @@
-* {
+/* Generale */
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
-body {
-    background-color: #0d0d0d;
-    color: #ffffff;
-    text-align: center;
+/* Titolo Principale */
+h1 {
+    color: #FFD700;
+    margin-top: 40px;
+    font-size: 48px;
 }
 
-header {
-    padding: 20px 0;
-}
-
-header h1 {
-    font-size: 2.5em;
-    color: #f2b705;
-}
-
+/* Navigazione */
 nav ul {
     list-style: none;
-    padding: 10px;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
+nav a {
     text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 16px;
+    transition: 0.3s;
 }
 
-nav ul li a.active {
-    background-color: #f2b705;
+nav a.active, nav a:hover {
+    background-color: #FFD700;
+    color: #1a1a1a;
     border-radius: 5px;
 }
 
-.top-bar {
+/* Contenuto Principale */
+.main-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    gap: 100px;
+    margin-top: 60px;
 }
 
-.left, .right {
-    margin: 0 30px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #f2b705;
+.server-ip button, .discord button {
+    background-color: #FFD700;
     border: none;
-    border-radius: 5px;
-    color: #000;
-    font-weight: bold;
+    color: #1a1a1a;
+    padding: 12px 20px;
+    font-size: 16px;
     cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-button:hover {
+.server-ip button:hover, .discord button:hover {
     background-color: #ffcc00;
 }
 
-.center img.floating-logo {
-    width: 180px;
+/* Logo */
+.logo img {
+    width: 200px;
     animation: float 3s ease-in-out infinite;
 }
 
-@keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0); }
+/* Pulsanti */
+.buttons {
+    margin-top: 50px;
 }
 
-.auth-buttons {
-    margin-top: 30px;
-}
-
-.auth-buttons button {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #f2b705;
+.buttons button {
+    background-color: #FFD700;
     border: none;
-    border-radius: 5px;
-    color: #000;
+    color: #1a1a1a;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
     cursor: pointer;
-    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-.snowfall::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    background: url('snow.png') repeat;
-    animation: snow 20s linear infinite;
-    opacity: 0.5;
+.buttons button:hover {
+    background-color: #ffcc00;
 }
 
-@keyframes snow {
-    0% { background-position: 0 0; }
-    100% { background-position: 500px 1000px; }
+/* Effetto Fluttuante */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
 }
