@@ -7,40 +7,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="snowfall"></div>
 
-    <header>
-        <h1>LoyaltyMC Shop</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Forum</a></li>
-                <li><a href="#" class="active">Store</a></li>
-                <li><a href="#">Stato</a></li>
-                <li><a href="#">Staff</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Titolo Principale -->
+    <h1>LoyaltyMC Shop</h1>
 
-    <section class="top-bar">
-        <div class="left">
+    <!-- Menu di Navigazione -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#" class="active">Store</a></li>
+            <li><a href="#">Stato</a></li>
+            <li><a href="#">Staff</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sezione Logo con IP e Discord -->
+    <div class="main-content">
+        <div class="server-ip">
             <button onclick="copyIP()">play.loyaltymc.it [1.8-1.21]</button>
         </div>
 
-        <div class="center">
-            <img src="loyaltymc.png" alt="LoyaltyMC Logo" class="floating-logo">
+        <div class="logo">
+            <img src="img/loyaltymc.png" alt="LoyaltyMC Logo">
         </div>
 
-        <div class="right">
-            <button onclick="window.open('https://discord.gg/Qgp35DQe', '_blank')">Discord</button>
+        <div class="discord">
+            <button onclick="window.open('https://discord.gg/Qgp35DQe')">Discord</button>
         </div>
-    </section>
+    </div>
 
-    <section class="auth-buttons">
+    <!-- Sezione Pulsanti -->
+    <div class="buttons">
         <button>Accedi</button>
         <button>Registrati</button>
         <button>Cerca</button>
-    </section>
+    </div>
 
     <script src="script.js"></script>
 </body>
